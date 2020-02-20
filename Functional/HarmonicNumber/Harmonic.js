@@ -13,5 +13,4 @@ let input=require('readline-sync')
 let N=input.questionInt('enter the value of N')
 console.log(nthHarmonic(N))
 return 0
-
 Harmonic.nthHarmonic(N)
