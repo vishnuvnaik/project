@@ -10,7 +10,11 @@
 
 const Flipcoin = require('./FlipcoinBL')
 var read =  require('readline-sync')
+function flipCo()
+{
 let num =   read.question('enter the number of times you want to flip the coin ');
 console.log(Flip(num))
 return 0
 Flipcoin.Flip(num)
+}
+flipCo()
