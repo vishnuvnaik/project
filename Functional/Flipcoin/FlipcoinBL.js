@@ -7,21 +7,22 @@
 Flip=(num) =>
 {
 try {
-let heads = 0;
-let tails = 0;
+let heads = 0; // head count is assigned to zero
+let tails = 0; // tail count is assigned to zero
 for(i=0;i<num;i++)
 {
-x = Math.floor(Math.random() * 10);
+x = Math.floor(Math.random() * 10); //random number generation
 console.log(x)
 if(x>5)
 {
-    tails++
+    tails++ //tail counts incremented when x is greater than 5
 }
 else
 {
-    heads++
+    heads++ //head count incremented when x is less than 5
 }
 }
+// printing outputs
 console.log('number of heads is ',heads)
 console.log("number of tails is ",tails)
 headp = heads/num *100 ;

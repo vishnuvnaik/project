@@ -24,9 +24,10 @@ quad=(a,b,c) =>
     console.log("root1 = ",root1);
     console.log("root2 = ",root2);
  } 
- catch (error) {
+ catch (error)
+{
     console.log(error) 
- }
+}
 }
 
 module.exports= {quad}
