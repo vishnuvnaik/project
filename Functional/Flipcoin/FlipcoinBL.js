@@ -28,7 +28,9 @@ headp = heads/num *100 ;
 tailp = tails/num *100;
 console.log('heads percentage =',headp);
 console.log('tails percentage = ',tailp);   
-} catch (error) {
+} 
+catch (error) 
+{
     console.log(error)
     
 }
