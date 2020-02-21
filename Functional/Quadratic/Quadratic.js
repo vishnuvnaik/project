@@ -8,15 +8,14 @@
 * @since : February 18 2020
 ****************************************************************/
 
-const Quadratic=require('./QuadraticBL')
+const Quadratic = require('./QuadraticBL')
 let input = require('readline-sync')
-function quadEqn()
-{
-let a = input.questionInt("enter the value of a :- ");
-let b = input.questionInt("enter the value of b :- ");
-let c = input.questionInt("enter the value of c :- ");
-console.log(quad(a,b,c));
-return 0;
-Quadratic.quad(n);
+function quadEqn() {
+    let a = input.questionInt("enter the value of a :- ");
+    let b = input.questionInt("enter the value of b :- ");
+    let c = input.questionInt("enter the value of c :- ");
+    console.log(quad(a, b, c));
+    return 0;
+    Quadratic.quad(n);
 }
 quadEqn()
