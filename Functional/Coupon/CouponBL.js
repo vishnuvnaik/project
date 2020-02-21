@@ -1,6 +1,6 @@
 couponCode = (n) => {
     try {
-        for (i = 0; i < n; i++) // loop to generate random numbers till n times
+        for (i = 0; i < n; i++) // for loop to generate random numbers till n times
         {
             x = Math.floor(Math.random() * 10); // generating random numbers to form coupon codes
             y = Math.floor(Math.random() * 100);

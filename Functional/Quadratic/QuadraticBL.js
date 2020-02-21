@@ -6,10 +6,10 @@
 
 quad = (a, b, c) => {
     try {
-        let root1 = 0;
+        let root1 = 0; // assign roots to zero
         let root2 = 0;
-        delta = b * b - 4 * a * c;
-        if (delta > 0) {
+        delta = b * b - 4 * a * c; //calculate determinant
+        if (delta > 0) { //calculate the roots according the value of delta
             root1 = (-b + Math.sqrt(delta)) / 2 * a;
             root2 = (-b - Math.sqrt(delta)) / 2 * a;
         }

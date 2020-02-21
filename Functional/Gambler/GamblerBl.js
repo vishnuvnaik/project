@@ -28,11 +28,11 @@ gambling = (stake, goal, bet, n) => {
 
         }
         if (stake > goal) { //check stake is greater than goal
-            console.log(" you have reached the goal :");
+            console.log(" You have reached the goal :");
 
         }
         else {
-            console.log("you didnt reached the goal");
+            console.log("you failed to reach the goal");
         }
         console.log("number of wins = ", win);  //print the results
         console.log("number of loss = ", loss);
