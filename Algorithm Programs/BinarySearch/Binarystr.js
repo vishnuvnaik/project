@@ -1,3 +1,13 @@
+/***************************************************************
+* @Execution : default node : cmd> Binarystr.js
+* @Purpose : to study the algorithms working.
+* @description : Searching of user inputted word from a file
+* @overview : Searching using binary search algorithm
+* @author : Vishnu V Dev <vishnuvdev17@gmail.com>
+* @version : 1.0
+* @since : February 18 2020
+****************************************************************/
+
 const Binarystr = require('./BinarystrBL')
 let input = require('readline-sync')
 var arr = [];

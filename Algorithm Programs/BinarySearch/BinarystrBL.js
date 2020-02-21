@@ -1,3 +1,9 @@
+/**
+* @description : Binary Search
+* @param {Binary search algorithm}
+* @return Searching of inputted word in the file 
+*/
+
 binarySearchStrg = (arr, search) =>
  {
     try {
@@ -23,10 +29,8 @@ binarySearchStrg = (arr, search) =>
                 first = mid + 1;
             else
                 last = mid - 1;
-
-         return false;
         }
-        
+        return false;
 
 
 
