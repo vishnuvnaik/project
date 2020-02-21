@@ -15,5 +15,5 @@ var arr = [2000, 500, 200, 100, 50, 10, 5, 2, 1]
  * Declaring the array elements.
  */
 var amount = read.question("Enter the amount :");
-console.log(vendingMach(arr,amount))
-vending.vendingMach(arr,amount)
+console.log(vendingMach(arr, amount))
+vending.vendingMach(arr, amount)

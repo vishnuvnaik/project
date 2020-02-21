@@ -1,3 +1,9 @@
+/**
+* @description : Coupon code generator
+* @param {Coupon.js}
+* @return Displays random coupon numbers accrording to the user desired times
+*/
+
 couponCode = (n) => {
     try {
         for (i = 0; i < n; i++) // for loop to generate random numbers till n times

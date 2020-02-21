@@ -1,7 +1,7 @@
 /**
-* @description : Vending Machine
+* @description : There is 1, 2, 5, 10, 50, 100, 500 and 1000 Rs Notes which can be returned by Vending Machine.
 * @param {Vending machine}
-* @return Generate minimum number of notes according to the inoput amount
+* @return Generate minimum number of notes according to the input amount
 */
 
 vendingMach = (arr, amount) =>
