@@ -10,11 +10,10 @@
 
 const Coupon = require('./CouponBL')
 let input = require('readline-sync')
-function couponn()
-{
-let n = input.questionInt('enter the number of coupons to be generated')
-console.log(couponCode(n));
-return 0
-Coupon.couponCode(num);
+function couponn() {
+    let n = input.questionInt('enter the number of coupons to be generated')
+    console.log(couponCode(n));
+    return 0
+    Coupon.couponCode(num);
 }
 couponn();
