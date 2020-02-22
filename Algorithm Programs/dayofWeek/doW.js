@@ -12,6 +12,6 @@ let input = require('readline-sync')
 let m = input.questionInt('enter the month ');
 let d = input.questionInt('enter the date');
 let y = input.questionInt('enter the year ');
-console.log(dayofWeek(m,d,y))
+console.log(dayofWeek(m, d, y))
 return 0;
-doW.dayofWeek(m,d,y);
+doW.dayofWeek(m, d, y);
