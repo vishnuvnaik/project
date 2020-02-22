@@ -7,6 +7,8 @@
 binarySearchStrg = (arr, search) =>
  {
     try {
+        var x = arr.toString();
+        var arr = x.split(" ");
         arr.sort();
         console.log(arr);
 
