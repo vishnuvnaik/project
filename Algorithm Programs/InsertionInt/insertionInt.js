@@ -1,16 +1,15 @@
 /***************************************************************
-* @Execution : default node : cmd> binaryInt.js
-* @Purpose : to study the algorithms working.
-* @description : Searching of user inputted number from the array
-* @overview : Searching using binary search algorithm
+* @Execution : default node : cmd> insertionInt.js
+* @Purpose : to study the working of algorithm.
+* @description : Sorting of input numbers of array
+* @overview : Sorting using insertion sort algorithm
 * @author : Vishnu V Dev <vishnuvdev17@gmail.com>
 * @version : 1.0
 * @since : February 18 2020
 ****************************************************************/
-
-const binaryInt = require('./binaryBL')
+const insertionInt = require('./insertionintBL')
 let input = require('readline-sync')
 let size = input.questionInt('enter the size of the array')
-console.log(binaryI(size))
+console.log(insertionPro(size))
 return 0;
-binaryInt.binaryI(size);
+insertionInt.insertionPro(size);

@@ -1,5 +1,5 @@
 /***************************************************************
-* @Execution : default node : cmd> Bubble.js
+* @Execution : default node : cmd> insertionSort.js
 * @Purpose : to study the functionals working.
 * @description : Sorting of user inputted strings
 * @overview : Sorting using insertion sort algorithm
