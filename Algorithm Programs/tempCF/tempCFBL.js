@@ -1,8 +1,8 @@
 /**
-* @description : Day of week     
-* @param {doW}
-* @return Input the month day and year and display the respected day of week
-*/
+* @description : Temperature conversion     
+* @param {tempCF}
+* @return Input the temperature and convert it from celsius to fahrenheit or vice versa
+ **/
 temP = (temp) => {
     try {
         let input = require('readline-sync')
