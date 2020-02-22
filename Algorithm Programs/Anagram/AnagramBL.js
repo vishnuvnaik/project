@@ -1,4 +1,4 @@
-/**
+/***
 * @description : Anagram Detection
 * @param {Anagram}
 * @return Wheather the string are anagram or not
