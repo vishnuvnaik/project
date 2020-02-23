@@ -7,7 +7,7 @@
 * @version : 1.0
 * @since : February 18 2020
 ****************************************************************/
-const doW = require('./dowBL')
+const dayoFWEEK = require('./dayoFWEEKBL')
 let input = require('readline-sync')
 let m = input.questionInt('enter the month ');
 let d = input.questionInt('enter the date');
