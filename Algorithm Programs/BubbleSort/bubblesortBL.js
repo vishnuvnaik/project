@@ -8,7 +8,7 @@ bubblePro = (size) => {
         var arr = []; // Array declared
         let temp;
         for (i = 0; i < size; i++) {    //loop to input the elements of the array
-            let input = require('readline-sync')
+            let input = require('./node_modules/readline-sync')
             arr[i] = input.questionInt('enter elements')
             
         }

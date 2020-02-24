@@ -7,8 +7,8 @@
 * @version : 1.0
 * @since : February 18 2020
 ***************************************************************/
-const Bubble = require('./BubbleBL')
-let input = require('readline-sync')
+const Bubble = require('./bubblesortBL')
+let input = require('./node_modules/readline-sync')
 let size = input.questionInt('enter the size of the array')
 console.log(bubblePro(size))
 return 0;

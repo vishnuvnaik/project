@@ -7,7 +7,7 @@
 * @version : 1.0
 * @since : February 18 2020
 ****************************************************************/
-let path = require('./bubblestrBL')
+let path = require('./bubblestringBL')
 let input = require('readline-sync')
 let m = input.questionInt('enter the length of the array')
 try {
