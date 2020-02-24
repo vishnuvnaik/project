@@ -6,12 +6,12 @@
 exports.mergeSort = (arr) => { //function declared
     try {
         let length = arr.length; //to find the length of the strings
-        if (length < 2) { 
+        if (length < 2) {
             return arr;
         }
-        let mid = Math.floor(length / 2); 
+        let mid = Math.floor(length / 2);
         let left = arr.slice(0, mid)
-        let right = arr.slice(mid);
+        let right = length - mid;
         let result = [];
         let rlen = right.length;
         let llen = left.length;
@@ -24,11 +24,11 @@ exports.mergeSort = (arr) => { //function declared
                 result.push(right[r++]);
             }
         }
-        
+
         console.log(result.concat(left.slice(l)).concat(right.slice(r))); //printing the strings
 
     } catch (error) {
         console.log(error)
-        
+
     }
 }

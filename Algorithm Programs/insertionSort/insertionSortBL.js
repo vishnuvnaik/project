@@ -23,11 +23,10 @@ exports.insertionSort = (arr) => {
             }
             /**
              * 
-             * Insert the copied number at the correct position
-             *  in sorted part.
+             * copied number is inserted at the right position
              *  */
             arr[j + 1] = temp;
-        }
+        } /* print the sorted array */
         console.log("Sorted List:" + arr);
 
     } catch (error) {
