@@ -10,13 +10,13 @@ exports.insertionSort = (arr) => {
         for (var i = 1; i < length; i++) {
             var temp = arr[i];
             /**
-             *  Copy of the current element. 
-             *   Check through the sorted part and compare with the number in tmp. If large, shift the number
+             *  Current element is being copied. 
+             *   Check the sorted part and compare with the number in temp. If it is large, shift the number.
              * 
              */
             for (var j = i - 1; j >= 0 && (arr[j] > temp); j--) {
                 /**
-                 * Shift the number.
+                 * Shifting the number.
                  * 
                  *  */
                 arr[j + 1] = arr[j];
