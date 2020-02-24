@@ -2,7 +2,7 @@
 * @description : Coupon code generator
 * @param {Coupon.js}
 * @return Displays random coupon numbers accrording to the user desired times
-*/
+**/
 
 couponCode = (number) => {
  
