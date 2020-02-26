@@ -13,6 +13,7 @@ let input = require('readline-sync')
 var fs = require('fs')
 var arr = [];
 
+
 var fileR = fs.readFileSync('Sample.txt', 'utf8', function (err, data) {
     if (err) {
         console.log(error)
