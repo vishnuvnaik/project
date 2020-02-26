@@ -1,11 +1,10 @@
 /**
-* @description : Binary Search
-* @param {Binary search algorithm}
-* @return Searching of inputted word in the file 
-*/
+ * @description : Binary Search
+ * @param {Binary search algorithm}
+ * @return Searching of inputted word in the file 
+ **/
 
-binarySearchStrg = (arr, search) =>
- {
+binarySearchStrg = (arr, search) => {
     try {
         var x = arr.toString();
         var arr = x.split(" ");
@@ -15,8 +14,8 @@ binarySearchStrg = (arr, search) =>
         var first = 0;
         var last = arr.length - 1;
         /**
-        * Iterate while start not meets stop
-        */
+         * Iterate while start not meets stop
+         */
         while (first <= last) {
             var mid = first + Math.floor((last - first) / 2);
             /**
@@ -24,8 +23,8 @@ binarySearchStrg = (arr, search) =>
              */
             if ((arr[mid]) == search)
                 /**
-               * Else look in left or right half accordingly
-               */
+                 * Else look in left or right half accordingly
+                 */
                 return true;
             else if ((arr[mid]) < search)
                 first = mid + 1;
@@ -41,4 +40,6 @@ binarySearchStrg = (arr, search) =>
 
     }
 }
-module.exports = { binarySearchStrg }
+module.exports = {
+    binarySearchStrg
+}

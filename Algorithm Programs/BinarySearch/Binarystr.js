@@ -6,7 +6,7 @@
  * @author : Vishnu V Dev <vishnuvdev17@gmail.com>
  * @version : 1.0
  * @since : February 18 2020
- ****************************************************************/
+ ***************************************************************/
 
 const Binarystr = require('./BinarystrBL')
 let input = require('readline-sync')
