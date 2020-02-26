@@ -1,8 +1,8 @@
 /**
-* @description : Insertion sort algorithm
-* @param {insertionSort}
-* @return Sort and display the inputted strings
-**/
+ * @description : Insertion sort algorithm
+ * @param {insertionSort}
+ * @return Sort and display the inputted strings
+ **/
 
 exports.insertionSort = (arr) => {
     try {

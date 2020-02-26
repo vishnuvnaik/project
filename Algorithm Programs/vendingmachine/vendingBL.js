@@ -1,11 +1,10 @@
 /**
-* @description : There is 1, 2, 5, 10, 50, 100, 500 and 1000 Rs Notes which can be returned by Vending Machine.
-* @param {Vending machine}
-* @return Generate minimum number of notes according to the input amount
-*/
+ * @description : There is 1, 2, 5, 10, 50, 100, 500 and 1000 Rs Notes which can be returned by Vending Machine.
+ * @param {Vending machine}
+ * @return Generate minimum number of notes according to the input amount
+ */
 
-vendingMach = (arr, amount) =>
-{
+vendingMach = (arr, amount) => {
     try {
         var note = 0;
         for (let i = 0; i < arr.length; i++) {
@@ -26,4 +25,6 @@ vendingMach = (arr, amount) =>
 
     }
 }
-module.exports={vendingMach}
+module.exports = {
+    vendingMach
+}

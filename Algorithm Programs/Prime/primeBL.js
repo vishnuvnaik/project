@@ -1,13 +1,10 @@
-
-
 /**
-* @description : Prime number    
-* @param {Prime Num}
-* @return Display prime numbers within the range
-*/
+ * @description : Prime number    
+ * @param {Prime Num}
+ * @return Display prime numbers within the range
+ */
 //function to calculate the prime numbers
-function isprime(num)  
-{                                                               
+function isprime(num) {
     try {
         if (num == 0 || num == 1)
             return false;
@@ -23,14 +20,12 @@ function isprime(num)
     }
 }
 /* function to display the prime number in the range of 0-1000 */
-function primeNum()  
-{
+function primeNum() {
     try {
         console.log("prime numbers between 0 and 1000 are ")
-        for (let i=0;i<=1000;i++)   //for loop to display the numbers within the range 
+        for (let i = 0; i <= 1000; i++) //for loop to display the numbers within the range 
         {
-            if(this.isprime(i))
-            {
+            if (this.isprime(i)) {
                 console.log(i);
             }
         }
@@ -39,4 +34,6 @@ function primeNum()
         console.log(error)
     }
 }
-module.exports= {primeNum}
+module.exports = {
+    primeNum
+}

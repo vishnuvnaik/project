@@ -1,8 +1,8 @@
 /**
-* @description : Insertion sort algorithm
-* @param {insertionSort}
-* @return Sort and display the inputted numbers
-*/
+ * @description : Insertion sort algorithm
+ * @param {insertionSort}
+ * @return Sort and display the inputted numbers
+ */
 
 insertionPro = (size) => {
     try {
@@ -10,7 +10,7 @@ insertionPro = (size) => {
         var arr = []; // Array declared
 
 
-        for (i = 0; i < size; i++) {    //loop to input the elements of the array
+        for (i = 0; i < size; i++) { //loop to input the elements of the array
             let input = require('readline-sync')
             arr[i] = input.questionInt('enter elements')
         }
@@ -36,12 +36,14 @@ insertionPro = (size) => {
              *  */
             arr[j + 1] = temp;
 
-        } console.log("Sorted List:" + arr);
+        }
+        console.log("Sorted List:" + arr);
         return " ";
-    }
-    catch (error) {
+    } catch (error) {
         console.log(error)
     }
 }
 
-module.exports = { insertionPro }
+module.exports = {
+    insertionPro
+}
