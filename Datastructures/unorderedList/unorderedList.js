@@ -1,8 +1,8 @@
 /***************************************************************
  * @Execution : default node : cmd> unorderedList.js
- * @Purpose : To p
- * @description : 
- * @overview : 
+ * @Purpose : To print the unordered list read from the file 
+ * @description : inputs the data from the file and searches for a user inputted word if the word ispresent it is removed, if the word is not present the word is added
+ * @overview : Unordered list  
  * @author : Vishnu V Dev <vishnuvdev17@gmail.com>
  * @version : 1.0
  * @since : February 18 2020

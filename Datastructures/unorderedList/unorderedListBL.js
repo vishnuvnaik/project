@@ -1,7 +1,7 @@
 /**
- * @description : TO display th linkedlist from a file
+ * @description : To display the linkedlist from a file
  * @param {unorderedList}
- * @return  
+ * @return  displays the new update in the file
  */
 exports.unOrdered = (data) => {
 
