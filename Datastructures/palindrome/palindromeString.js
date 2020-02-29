@@ -7,12 +7,7 @@
  * @version : 1.0
  * @since : February 18 2020
  ****************************************************************/
-const path = require('./bankingCounterBL')
-
-function banking() {
-    var input = require('readline-sync')
-    
-    var size = input.questionInt('enter the number of peoples ')
-    path.bankingCash(size);
-}
-banking();
+const path = require('./palindromeStringBL')
+var input = require('readline-sync')
+var str = input.question(' Enter the string to check for palindrome ')
+path.palindromString(str);

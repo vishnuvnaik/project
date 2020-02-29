@@ -1,10 +1,10 @@
 /**
  * @description : Simulate banking cash counter
  * @param {exprsn}
- * @return  Displays the balance after withdrawal and deposit of cash
+ * @return  Displays the balance after withdrawal and deposit of cash.
  */
 var input = require('readline-sync')
-exports.bankingCash = (bank) => {
+exports.bankingCash = (size) => {
     try {
         class Queue { // creating queue class
             constructor() {
@@ -43,61 +43,75 @@ exports.bankingCash = (bank) => {
                 console.log(string);
             }
         }
-        var quenew = new Queue; //creating object for queue class
-        var balance;
-        balance = input.questionInt(' enter the user balance ');
-        switch (bank.toLowerCase()) { //switch case to choose withdraw or deposit
-            case 'withdraw':
-                var withdrawamt = input.questionInt('enter the withdraw amount user');
-                quenew.enqueue(withdrawamt);
-                withdraw(withdrawamt);
-                break;
-            case 'deposit':
-                var depositamt = input.questionInt(' enter the deposit amount user');
-                quenew.enqueue(depositamt);
-                deposit(depositamt);
-                break;
-            default:
-                console.log('enter some valid input');
+
+        if (size >= 1) {
+            people();
+        } else {
+            console.log(" queue came to end ")
+            return;
         }
 
-        function withdraw(withdrawamt) { //withdraw function 
-            if (balance > withdrawamt) {
-                balance = balance - withdrawamt;
-                console.log(" new balance of the user is ", balance);
-                userInput();
-            } else {
-                console.log(" you didnt have sufficient balance dude!!");
-            }
-        }
-
-        function deposit(depositamt) { //deposit function
-            balance = balance + depositamt;
-            console.log(" amount has been deposited the new balance is ", balance);
-            userInput();
-        }
-
-        function userInput() { //user input to continue or cancel .
-            console.log(" do you need to continue with the transaction or cancel the process");
-            var newbank = input.question(" enter withdraw or deposit or cancel ")
-            switch (newbank) {
+        function people() {
+            var bank = input.question(' Welcome user you are for deposit or withdraw :- ')
+            var quenew = new Queue; //creating object for queue class
+            var balance;
+            balance = input.questionInt(' enter the user balance ');
+            switch (bank.toLowerCase()) { //switch case to choose withdraw or deposit
                 case 'withdraw':
-                    let withdrawamt = input.questionInt('enter the withdraw amount user');
+                    var withdrawamt = input.questionInt('enter the withdraw amount user');
                     quenew.enqueue(withdrawamt);
                     withdraw(withdrawamt);
                     break;
                 case 'deposit':
-                    let depositamt = input.questionInt(' enter the deposit amount user');
+                    var depositamt = input.questionInt(' enter the deposit amount user');
                     quenew.enqueue(depositamt);
                     deposit(depositamt);
                     break;
-                case 'cancel':
-                    quenew.dequeue();
-                    break;
                 default:
-                    console.log("enter valid input");
+                    console.log('enter some valid input');
             }
+
+            function withdraw(withdrawamt) { //withdraw function 
+                if (balance > withdrawamt) {
+                    balance = balance - withdrawamt;
+                    console.log(" new balance of the user is ", balance);
+                    userInput();
+                } else {
+                    console.log(" you didnt have sufficient balance dude!!");
+                }
+            }
+
+            function deposit(depositamt) { //deposit function
+                balance = balance + depositamt;
+                console.log(" amount has been deposited the new balance is ", balance);
+                userInput();
+            }
+
+            function userInput() { //user input to continue or cancel .
+                console.log(" do you need to continue with the transaction or cancel the process");
+                var newbank = input.question(" enter withdraw or deposit or cancel ")
+                switch (newbank) {
+                    case 'withdraw':
+                        let withdrawamt = input.questionInt('enter the withdraw amount user');
+                        quenew.enqueue(withdrawamt);
+                        withdraw(withdrawamt);
+                        break;
+                    case 'deposit':
+                        let depositamt = input.questionInt(' enter the deposit amount user');
+                        quenew.enqueue(depositamt);
+                        deposit(depositamt);
+                        break;
+                    case 'cancel':
+                        quenew.dequeue();
+
+                        break;
+                    default:
+                        console.log("enter valid input");
+                }
+            }
+            size--;
         }
+        people();
     } catch (error) {
         console.log(error);
     }
