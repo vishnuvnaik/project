@@ -1,7 +1,7 @@
 /**
  * @description : Takes an Arithmetic Expression where parentheses are used to order the performance of operations. 
     Ensure parentheses must appear in a balanced fashion.
- * @param {simple balanced parantheses}
+ * @param {exprsn}
  * @return  displays the new update in the file
  */
 
@@ -40,29 +40,26 @@ exports.simpleParantheses = (exprsn) => {
             }
 
         }
-        const arr = exprsn.split('') //adding the string to an array
+        //adding the string to an array
         const mystack = new Stack(); //storing stack data to mystack
-        for (let i = 0; i < arr.length; i++) {
-            var ch = exprsn.charAt(i);
-        }
-        if (ch === '(') { //condition check for balanced  parantheses
-            mystack.push(ch);
-        } else {
-            switch (ch) {
+        let i = 0;
+        while (i < exprsn.length) {
+            switch (exprsn[i]) {
+                case '(':
+                    mystack.push(exprsn[i]);
+                    break;
                 case ')':
-                    if (mystack.pop() != '(') {
-                        return false;
+                    mystack.pop();
+                    break;
 
-                    }
             }
+            i++;
         }
-        if (mystack.size == 0) {
-            console.log("arithmetic expression balanced");
+        if (mystack.isEmpty()) {
+            console.log("balanced")
         } else {
-            console.log("not balanced");
+            console.log("not balanced")
         }
-        mystack.print();
-
 
     } catch (error) {
         console.log(error)
