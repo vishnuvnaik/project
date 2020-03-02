@@ -1,7 +1,7 @@
 /**
- * @description : Takes themonth and year as an arguement and displays the calendar for inputted year and month
- * @param {month,year,n}
- * @return  displays the calendar for inputted month and year
+ * @description : The program checks wheather the  inputted string is a palindrome or not using deque.
+ * @param  : {string}
+ * @return  : Displays the inputted string is palindrome or not
  */
 exports.palindromString = (str) => {
     try {
@@ -30,6 +30,15 @@ exports.palindromString = (str) => {
                 }
                 return true;
             }
+            removeBack() {
+                if (this.isEmpty()) {
+                    return undefined;
+                }
+                let result = this.items[this.count - 1];
+                delete this.items[this.count - 1];
+                this.count--;
+                return result;
+            }
             removeFront() { //removes an element
                 if (this.isEmpty) {
                     return undefined;
@@ -40,19 +49,13 @@ exports.palindromString = (str) => {
                 return result;
             }
             isEmpty() { //checks wheather the queue is empty or not
-                return this.length == 0;
+                return this.length === 0;
 
             }
             length() {
                 return this.count - this.lowestCount;
             }
-            front() { // returns the front element of the queue without removing it
-                if (this.empty) {
-                    console.print(" no data");
-                } else {
-                    return this.Deque;
-                }
-            }
+
             printQue() { //function to print the queue
                 let string = '';
                 let i = 0;
@@ -67,25 +70,21 @@ exports.palindromString = (str) => {
         let i = 0;
         if (str.length >= 2) {
             while (i < str.length) {
-                quenew.addFront(str[i]);
-                i++
-            }
-            let j = quenew.length();
-            while (j >= 0) {
-                if (quenew.length() == str[j]) {
-                    quenew.removeFront();
+                let back = quenew.removeBack();
+                let front = quenew.removeFront();
+                if (front != back) {
+                    return false;
+                    i++;
+                } else {
+                    return true;
                 }
-                j--;
-
-            }
-            if (quenew.isEmpty()) {
-                console.log("palindrome")
-            } else {
-                console.log("not palindrome")
             }
         }
-
-
+        if (back == front) {
+            console.log("palindrome")
+        } else {
+            console.log('not palindrome');
+        }
     } catch (error) {
         console.log(error)
     }

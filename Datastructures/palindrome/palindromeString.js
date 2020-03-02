@@ -1,8 +1,8 @@
 /***************************************************************
- * @Execution : default node : cmd > bankingCounter.js
- * @Purpose : simulate the bank cash counter 
- * @description : The user input is taken and the bank cash counter is simulated 
- * @overview : Banking cash counter
+ * @Execution : default node : cmd > palindromeString.js
+ * @Purpose : Check wheather the string is palindrome or not
+ * @description : The program checks wheather the  inputted string is a palindrome or not using deque.
+ * @overview : PalindromeString
  * @author : Vishnu V Dev <vishnuvdev17@gmail.com>
  * @version : 1.0
  * @since : February 18 2020

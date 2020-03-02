@@ -21,5 +21,5 @@ var files = fs.readFileSync('Sample.txt', 'utf8', function (err, data) {
     }
 });
 
-var splitfileR = files.split('');
-path.unOrdered(files)
+var splitfileR = files.split(' ');
+path.unOrdered(splitfileR)
