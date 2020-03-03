@@ -1,3 +1,8 @@
+/**
+ * @description : To display the linkedlist from a file
+ * @param { data }
+ * @return  displays the new update in the file
+ */
 exports.ordered = (data) => {
 
     try {

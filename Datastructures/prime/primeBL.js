@@ -1,3 +1,8 @@
+/**
+ * @description : To display the prime numbers within a range
+ * @param { data }
+ * @return  Pushes the prime number to a 2D array
+ */
 exports.findPrime = (arr) => {
     try {
         function isPrime(num) {
